@@ -24,9 +24,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid #d3d3ce; outline-offs
 .brand, .footer-name { font: 800 1.15rem/1 "Manrope", sans-serif; letter-spacing: -.08em; text-decoration: none; }
 .brand span, .footer-name span { color: var(--muted); }
 .site-nav { display: flex; align-items: center; gap: clamp(18px, 2.5vw, 36px); }
-.site-nav a, .hero-socials a, .contact-socials a { text-decoration: none; color: #bebebb; font-size: .82rem; transition: color .2s ease; }
-.site-nav a:hover, .hero-socials a:hover, .contact-socials a:hover { color: var(--white); }
+.site-nav a { text-decoration: none; color: #bebebb; font-size: .82rem; transition: color .2s ease; }
+.site-nav a:hover, .site-nav a:focus-visible { color: var(--white); }
 .menu-toggle { display: none; }
+.hero-socials a, .contact-socials a { text-decoration: none; color: #bebebb; font-size: .82rem; transition: color .2s ease; }
+.hero-socials a:hover, .contact-socials a:hover { color: var(--white); }
 
 .hero { position: relative; display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; min-height: min(850px, 100svh); padding-top: 100px; padding-bottom: 80px; }
 .hero-copy { position: relative; z-index: 1; padding: 50px 0 28px; }
